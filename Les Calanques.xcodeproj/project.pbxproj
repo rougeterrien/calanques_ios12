@@ -18,6 +18,7 @@
 		968B4D3721D8DBD000390178 /* TableViewIntegreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D3621D8DBD000390178 /* TableViewIntegreController.swift */; };
 		968B4D3921D908D300390178 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D3821D908D300390178 /* CalanqueCell.swift */; };
 		968B4D3B21D9132C00390178 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D3A21D9132C00390178 /* ImageRonde.swift */; };
+		968B4D3D21D938E100390178 /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D3C21D938E100390178 /* CalanqueCellAlternative.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		968B4D3621D8DBD000390178 /* TableViewIntegreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIntegreController.swift; sourceTree = "<group>"; };
 		968B4D3821D908D300390178 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		968B4D3A21D9132C00390178 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		968B4D3C21D938E100390178 /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				968B4D3821D908D300390178 /* CalanqueCell.swift */,
 				968B4D3A21D9132C00390178 /* ImageRonde.swift */,
+				968B4D3C21D938E100390178 /* CalanqueCellAlternative.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				968B4D3921D908D300390178 /* CalanqueCell.swift in Sources */,
 				968B4D1721D8D0A800390178 /* AppDelegate.swift in Sources */,
 				968B4D3521D8DB7800390178 /* ControllerAvecCarte.swift in Sources */,
+				968B4D3D21D938E100390178 /* CalanqueCellAlternative.swift in Sources */,
 				968B4D3321D8DB5F00390178 /* ControllerAvecTableView.swift in Sources */,
 				968B4D3B21D9132C00390178 /* ImageRonde.swift in Sources */,
 				968B4D2F21D8D65200390178 /* Calanques.swift in Sources */,
