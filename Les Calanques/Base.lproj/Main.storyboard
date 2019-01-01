@@ -142,7 +142,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aD0-C9-vxB"/>
+                    <navigationItem key="navigationItem" id="aD0-C9-vxB">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="oKo-d0-Xz8">
+                            <connections>
+                                <action selector="rechargerTout:" destination="9pv-A4-QxB" id="xF0-l9-OS4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rfu-WQ-u28" id="DNu-yK-Cqq"/>
                         <segue destination="4ym-gY-gCh" kind="show" identifier="Detail" id="tHg-rM-Oy2"/>
@@ -240,7 +246,13 @@
                             <outlet property="delegate" destination="cW8-iM-zpy" id="3LG-Px-b1l"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Uh0-bd-Pmh"/>
+                    <navigationItem key="navigationItem" id="Uh0-bd-Pmh">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="aZs-ri-JpM">
+                            <connections>
+                                <action selector="reloadAction:" destination="cW8-iM-zpy" id="rIq-g0-OxR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="4ym-gY-gCh" kind="show" identifier="Detail" id="XYC-VR-itC"/>
                     </connections>
@@ -376,6 +388,6 @@
         <image name="port pin" width="1024" height="684"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYC-VR-itC"/>
+        <segue reference="tHg-rM-Oy2"/>
     </inferredMetricsTieBreakers>
 </document>
