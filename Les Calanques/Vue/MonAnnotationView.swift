@@ -64,13 +64,14 @@ class MonAnnotationView: MKAnnotationView {
         view.addSubview(imageView)
         return view
     }
-}
-
-@objc detail() {
     
-}
 
-@objc gps() {
-    
-}
+    @objc  func detail() {
+        
+    }
 
+    @objc func gps() {
+        
+    }
+
+}
