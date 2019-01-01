@@ -19,7 +19,11 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         mapView.delegate = self
         addAnnotations()
-       
+        
+        // ajouté par bibi montre la portion de carte où sont les annotations
+        mapView.showAnnotations(mapView.annotations, animated: true)
+        
+        
     }
     
     func addAnnotations() {
@@ -47,9 +51,12 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
         if let anno = annotation as? MonAnnotation {
             var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
             if annotationView == nil {
-                annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
-                annotationView?.image = UIImage(named: "placeholder")
-                annotationView?.canShowCallout = true
+                annotationView = MonAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                
+                // code sans la class MonAnnotationView
+                //annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                //annotationView?.image = UIImage(named: "placeholder")
+                //annotationView?.canShowCallout = true
                 return annotationView
             } else {
                 return annotationView

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9618F81721DBADCC00513C7D /* MonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F81621DBADCC00513C7D /* MonAnnotationView.swift */; };
 		9635F8E721DB7A3100D6A4CC /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */; };
 		9635F8E921DBA3CB00D6A4CC /* MonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635F8E821DBA3CB00D6A4CC /* MonAnnotation.swift */; };
 		968B4D1721D8D0A800390178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D1621D8D0A800390178 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9618F81621DBADCC00513C7D /* MonAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotationView.swift; sourceTree = "<group>"; };
 		9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 		9635F8E821DBA3CB00D6A4CC /* MonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotation.swift; sourceTree = "<group>"; };
 		968B4D1321D8D0A800390178 /* Les Calanques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Les Calanques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 				968B4D3A21D9132C00390178 /* ImageRonde.swift */,
 				968B4D3C21D938E100390178 /* CalanqueCellAlternative.swift */,
 				9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */,
+				9618F81621DBADCC00513C7D /* MonAnnotationView.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				968B4D3721D8DBD000390178 /* TableViewIntegreController.swift in Sources */,
 				968B4D3121D8D96700390178 /* CalanquesCollection.swift in Sources */,
+				9618F81721DBADCC00513C7D /* MonAnnotationView.swift in Sources */,
 				968B4D3921D908D300390178 /* CalanqueCell.swift in Sources */,
 				9635F8E921DBA3CB00D6A4CC /* MonAnnotation.swift in Sources */,
 				968B4D1721D8D0A800390178 /* AppDelegate.swift in Sources */,
