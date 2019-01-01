@@ -20,10 +20,21 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         addAnnotations()
         
+        // autre solution pour passer une info d'une classe à une autre
+        // de MonAnnationView à ControllerAvecCarte
+        NotificationCenter.default.addObserver(self, selector: #selector(notifDetail), name: Notification.Name("Detail"), object: nil)
+        
         // ajouté par bibi montre la portion de carte où sont les annotations
         mapView.showAnnotations(mapView.annotations, animated: true)
         
         
+    }
+    
+    @objc func notifDetail(notification: Notification) {
+        if let calanque = notification.object as? Calanque {
+            print("j'ai une calanque")
+            toDetail(calanque: calanque)
+        }
     }
     
     func toDetail(calanque: Calanque) {
