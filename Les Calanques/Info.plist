@@ -49,5 +49,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Vous situer par rapport au calanques</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Vous situer par rapport au calanques</string>
 </dict>
 </plist>
