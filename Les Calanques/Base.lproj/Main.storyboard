@@ -202,6 +202,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="FJy-CE-Ep9" id="1aZ-Gs-ZzQ"/>
+                        <segue destination="4ym-gY-gCh" kind="show" identifier="Detail" id="6cX-75-PrJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -510,6 +511,6 @@
         <image name="sugiton" width="1600" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYC-VR-itC"/>
+        <segue reference="6cX-75-PrJ"/>
     </inferredMetricsTieBreakers>
 </document>
