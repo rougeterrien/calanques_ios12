@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ControllerAvecCarte: UIViewController {
+class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -17,18 +17,47 @@ class ControllerAvecCarte: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
         addAnnotations()
        
     }
     
     func addAnnotations() {
         for calanque in calanques {
+            
+            /*
+            // Annotation de base sans la classe MonAnnotation
             let annotation = MKPointAnnotation()
             annotation.coordinate = calanque.coordonnee
             annotation.title = calanque.nom
             mapView.addAnnotation(annotation)
+ */
+            // Annotation avec classe MonAnnotation
+            mapView.addAnnotation(MonAnnotation(calanque))
         }
     }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let reuseIdentifier = "reuseId"
+        
+        // vérifier que ce ne soit pas la position de l'utilisateur
+        if annotation.isKind(of: MKUserLocation.self) {
+            return nil
+        }
+        
+        if let anno = annotation as? MonAnnotation {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+            if annotationView == nil {
+                annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                annotationView?.image = UIImage(named: "placeholder")
+                annotationView?.canShowCallout = true
+                return annotationView
+            } else {
+                return annotationView
+            }
+        }
+        return nil
+    }
+
     @IBAction func segmentedChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0: mapView.mapType = MKMapType.standard
