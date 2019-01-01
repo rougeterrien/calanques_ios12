@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9635F8E721DB7A3100D6A4CC /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */; };
 		968B4D1721D8D0A800390178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B4D1621D8D0A800390178 /* AppDelegate.swift */; };
 		968B4D1E21D8D0A800390178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B4D1C21D8D0A800390178 /* Main.storyboard */; };
 		968B4D2021D8D0AC00390178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B4D1F21D8D0AC00390178 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 		968B4D1321D8D0A800390178 /* Les Calanques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Les Calanques.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B4D1621D8D0A800390178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		968B4D1D21D8D0A800390178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				968B4D3821D908D300390178 /* CalanqueCell.swift */,
 				968B4D3A21D9132C00390178 /* ImageRonde.swift */,
 				968B4D3C21D938E100390178 /* CalanqueCellAlternative.swift */,
+				9635F8E621DB7A3100D6A4CC /* BoutonArrondi.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				968B4D3121D8D96700390178 /* CalanquesCollection.swift in Sources */,
 				968B4D3921D908D300390178 /* CalanqueCell.swift in Sources */,
 				968B4D1721D8D0A800390178 /* AppDelegate.swift in Sources */,
+				9635F8E721DB7A3100D6A4CC /* BoutonArrondi.swift in Sources */,
 				968B4D3521D8DB7800390178 /* ControllerAvecCarte.swift in Sources */,
 				968B4D3D21D938E100390178 /* CalanqueCellAlternative.swift in Sources */,
 				968B4D3321D8DB5F00390178 /* ControllerAvecTableView.swift in Sources */,

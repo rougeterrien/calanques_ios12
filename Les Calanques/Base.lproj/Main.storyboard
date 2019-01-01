@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x6C-tf-rUV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -304,6 +304,92 @@
             </objects>
             <point key="canvasLocation" x="2464.8000000000002" y="24.7376311844078"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5F3-Gi-1At">
+            <objects>
+                <viewController id="x6C-tf-rUV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u2h-oj-SOO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="bOD-tD-RdR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-j6-aKY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yOR-9e-Do5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAI-mj-Zkl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Vzu-C8-xdE">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un coin de Paradis en plein coeur de la métropole marseillaise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u41-eP-YX4">
+                                <rect key="frame" x="20" y="245" width="335" height="332"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plB-rP-oF0" customClass="BoutonArrondi" customModule="Les_Calanques" customModuleProvider="target">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.28016725443696444" green="0.64011589353195641" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lvm-zx-U5B"/>
+                                </constraints>
+                                <state key="normal" title="Visitez les Calanques">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="BmQ-2P-mpU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sugiton" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-1F-Gwc" customClass="ImageRonde" customModule="Les_Calanques" customModuleProvider="target">
+                                <rect key="frame" x="100" y="50" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="04p-hk-8lp"/>
+                                    <constraint firstAttribute="height" constant="175" id="gxr-cW-v7g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ehd-1F-Gwc" firstAttribute="centerX" secondItem="u2h-oj-SOO" secondAttribute="centerX" id="0Y2-f9-7dT"/>
+                            <constraint firstItem="u41-eP-YX4" firstAttribute="top" secondItem="Ehd-1F-Gwc" secondAttribute="bottom" constant="20" id="4SI-n4-qAZ"/>
+                            <constraint firstItem="ziQ-fl-nDP" firstAttribute="trailing" secondItem="u41-eP-YX4" secondAttribute="trailing" constant="20" id="4st-sA-wwx"/>
+                            <constraint firstItem="plB-rP-oF0" firstAttribute="top" secondItem="u41-eP-YX4" secondAttribute="bottom" constant="20" id="5SN-Jp-dWa"/>
+                            <constraint firstItem="u41-eP-YX4" firstAttribute="leading" secondItem="ziQ-fl-nDP" secondAttribute="leading" constant="20" id="7QY-gs-A29"/>
+                            <constraint firstItem="bOD-tD-RdR" firstAttribute="leading" secondItem="u2h-oj-SOO" secondAttribute="leading" id="Ede-iG-KA4"/>
+                            <constraint firstItem="ziQ-fl-nDP" firstAttribute="trailing" secondItem="plB-rP-oF0" secondAttribute="trailing" constant="20" id="Haz-na-PiV"/>
+                            <constraint firstItem="bOD-tD-RdR" firstAttribute="top" secondItem="u2h-oj-SOO" secondAttribute="top" id="Hi8-FT-OzI"/>
+                            <constraint firstItem="bOD-tD-RdR" firstAttribute="bottom" secondItem="u2h-oj-SOO" secondAttribute="bottom" id="QdC-5X-2WM"/>
+                            <constraint firstItem="Jix-j6-aKY" firstAttribute="trailing" secondItem="ziQ-fl-nDP" secondAttribute="trailing" id="Qgq-xD-yDx"/>
+                            <constraint firstItem="bOD-tD-RdR" firstAttribute="trailing" secondItem="u2h-oj-SOO" secondAttribute="trailing" id="SDw-Un-IAH"/>
+                            <constraint firstItem="Jix-j6-aKY" firstAttribute="bottom" secondItem="ziQ-fl-nDP" secondAttribute="bottom" id="ZHd-E8-JUb"/>
+                            <constraint firstItem="Ehd-1F-Gwc" firstAttribute="top" secondItem="ziQ-fl-nDP" secondAttribute="top" constant="30" id="dFi-lC-zre"/>
+                            <constraint firstItem="Jix-j6-aKY" firstAttribute="top" secondItem="u2h-oj-SOO" secondAttribute="top" id="fhQ-Dq-dl6"/>
+                            <constraint firstItem="Jix-j6-aKY" firstAttribute="leading" secondItem="ziQ-fl-nDP" secondAttribute="leading" id="i1y-4M-B5B"/>
+                            <constraint firstItem="ziQ-fl-nDP" firstAttribute="bottom" secondItem="plB-rP-oF0" secondAttribute="bottom" constant="20" id="kOC-BQ-zmK"/>
+                            <constraint firstItem="plB-rP-oF0" firstAttribute="leading" secondItem="ziQ-fl-nDP" secondAttribute="leading" constant="20" id="ylD-9g-LiV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ziQ-fl-nDP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4sO-eM-IJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746.39999999999998" y="-0.44977511244377816"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -386,6 +472,7 @@
         <image name="earth" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
         <image name="port pin" width="1024" height="684"/>
+        <image name="sugiton" width="1600" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tHg-rM-Oy2"/>
